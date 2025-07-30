@@ -1,0 +1,61 @@
+= Hello Columnar -- Node.js SDK Quickstart Guide
+:page-toclevels: 2
+:description: Install, connect, try. A quick start guide to get you up and running with Columnar and the {name-sdk}.
+
+[abstract]
+{description}
+
+
+
+include::columnar-sdk:shared:partial$start-using-sdk.adoc[tag=intro]
+
+
+== Before You Start
+
+Sign up for a xref:cloud:get-started:create-account.adoc[Capella account],
+and choose a xref:columnar:intro:intro.adoc[Columnar] cluster.
+
+You'll need to add your IP address to the allowlist, during the sign-up and cluster creation process (this can also be done at any time, via the UI, should the address change, or if you need to add a new one).
+
+=== Prerequisites
+
+The Columnar Node.js SDK supports LTS versions of Node.js --
+these are 20 and 22 at the time of the 1.0.0 release (October 2024).
+See the xref:project-docs:compatibility.adoc#platform-compatibility[compatibility page] for more information about platform support.
+
+We recommend using the most recent long-term support (LTS) version of Node.js -- 
+at the time of writing (October 2024) this is version 22.
+
+
+== Getting the SDK
+
+The SDK can be installed via `npm`:
+
+[source,console]
+----
+npm install couchbase-columnar
+----
+
+For other installation methods, see the xref:project-docs:sdk-full-installation.adoc[installation page].
+
+
+[quickstart]
+== Connecting and Executing a Query
+
+To use there examples, create a collection to work upon by 
+xref:columnar:intro:examples.adoc#travel-sample[importing the travel-sample dataset] into your cluster.
+
+
+=== CommonJS
+
+[source,javascript]
+----
+include::devguide:example$node/src/startusing_commonjs.js[indent=0,tag=commonjs]
+----
+
+=== ES Modules
+
+[source,javascript]
+----
+include::devguide:example$node/src/startusing_esmodules.js[indent=0,tag=esmodules]
+----
