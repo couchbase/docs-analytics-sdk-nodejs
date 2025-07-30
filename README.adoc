@@ -1,7 +1,7 @@
 = Couchbase Analytics Node.js SDK Documentation
 
 This repository hosts the documentation source for the
-https://docs.couchbase.com/analytics-nodejs-sdk/1.0/hello-world/overview.html[Couchbase Analytics Node.js SDK Documentation].
+https://docs.couchbase.com/analytics-nodejs-sdk/1.0/hello-world/overview.html[Analytics Node.js SDK Documentation].
 
 
 This branch documents the 1.0 release of the SDK.
@@ -50,7 +50,7 @@ Most re-use is from single-sourced content in the https://github.com/couchbase/d
 
 === Single-sourced Content
 
-To make maintenance easier for docs of around a dozen SDKs, content that is common across SDK docsets is -- wherever possible -- single-sourced from the https://github.com/couchbase/docs-columnar-sdk-common[sdk-common] repo.
+To make maintenance easier for docs of around a dozen SDKs, content that is common across SDK docsets is -- wherever possible -- single-sourced from the https://github.com/couchbase/docs-analytics-sdk-common[sdk-common] repo.
 
 We recognise that this adds a slight cognitive burden for the new maintainer, but one layer of abstraction seems a reasonable compromise for maintainability.
 To make content re-use workable, certain replaceable attributes are used.
