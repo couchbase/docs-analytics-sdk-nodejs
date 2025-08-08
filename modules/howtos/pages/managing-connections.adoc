@@ -87,14 +87,14 @@ TIP: You don't need to include the address of every node in the cluster.
 The client fetches the full address list from the first node it is able to contact.
 ////
 
-
+////
 .Connection string with two parameters
 ----
 couchbases://cb.<your-endpoint>.cloud.couchbase.com?timeout.connect_timeout=75s&timeout.query_timeout=100s
 ----
 
 The full list of recognized parameters is documented in the xref:ref:client-settings.adoc[client settings reference].
-
+////
 
 ////
 Any client setting with a system property name may also be specified as a connection string parameter (without the `com.couchbase.env.` prefix).
