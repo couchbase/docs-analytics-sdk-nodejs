@@ -3,7 +3,7 @@ const analytics = require('couchbase-analytics')
 
 async function main() {
     // Update this to your cluster
-    const clusterConnStr = 'https://--your-instance--'
+    const clusterConnStr = 'https://<your_hostname>:<PORT>'
     const username = 'username'
     const password = 'Password123!'
     // User Input ends here.
