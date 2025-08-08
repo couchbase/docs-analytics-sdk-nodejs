@@ -3,18 +3,14 @@
 :page-role: tiles
 :!sectids:
 
+
 = Node.js Analytics SDK
 
-
-
-
-
-The Analytics Node.js SDK allows you to connect to an xref:analytics:intro:intro.adoc[Enterprise Analytics] cluster from Node.js.
+The Analytics Node.js SDK allows you to connect to an xref:enterprise-analytics:intro:intro.adoc[Enterprise Analytics] cluster from Node.js.
 For connecting to a Couchbase Server Cluster -- self-managed, or Capella Operational --
 see our xref:nodejs-sdk:hello-world:overview.adoc[Node.js Server SDK].
 
 TIP: Connecting to a xref:columnar:intro:intro.adoc[_Capella_ Analytics] cluster from Node.js currently requires a xref:nodejs-columnar-sdk:hello-world:overview.adoc[Node.js Columnar SDK].
-
 
 {empty} +
 
@@ -92,7 +88,7 @@ Useful resources to help support your development experience with Couchbase and 
 
 [.column]
 .Deployment Docs
-* xref:project-docs:sdk-release-notes.adoc[]
+* xref:project-docs:analytics-sdk-release-notes.adoc[]
 * xref:project-docs:compatibility.adoc[Compatibility]
 * xref:project-docs:sdk-full-installation.adoc[]
 
