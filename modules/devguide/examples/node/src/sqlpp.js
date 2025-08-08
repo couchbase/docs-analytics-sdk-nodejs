@@ -1,12 +1,12 @@
-const columnar = require('couchbase-columnar')
+import { Credential, createInstance } from "couchbase-analytics"
 
 async function main() {
-    const clusterConnStr = 'couchbases://--your-instance--'
+    const clusterConnStr = 'https://--your-instance--'
     const username = 'username'
     const password = 'Password123!'
 
-    const credential = new columnar.Credential(username, password)
-    const cluster = columnar.createInstance(clusterConnStr, credential, {
+    const credential = new Credential(username, password)
+    const cluster = createInstance(clusterConnStr, credential, {
         securityOptions: {
             disableServerCertificateVerification: true
         }

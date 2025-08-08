@@ -1,9 +1,9 @@
 // #tag::esmodules[]
-import { Certificates, Credential, createInstance } from "couchbase-columnar"
+import { Credential, createInstance } from "couchbase-analytics"
 
 async function main() {
     // Update this to your cluster
-    const clusterConnStr = 'couchbases://--your-instance--'
+    const clusterConnStr = 'https://--your-instance--'
     const username = 'username'
     const password = 'Password123!'
     // User Input ends here.
