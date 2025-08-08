@@ -1,15 +1,15 @@
 // #tag::commonjs[]
-const columnar = require('couchbase-columnar')
+const analytics = require('couchbase-analytics')
 
 async function main() {
     // Update this to your cluster
-    const clusterConnStr = 'couchbases://--your-instance--'
+    const clusterConnStr = 'https://--your-instance--'
     const username = 'username'
     const password = 'Password123!'
     // User Input ends here.
 
-    const credential = new columnar.Credential(username, password)
-    const cluster = columnar.createInstance(clusterConnStr, credential)
+    const credential = new analytics.Credential(username, password)
+    const cluster = analytics.createInstance(clusterConnStr, credential)
 
     // Execute a streaming query with positional arguments.
     let qs = 'SELECT * FROM `travel-sample`.inventory.airline LIMIT 10;'
