@@ -6,7 +6,7 @@
 {description}
 
 
-include::columnar-sdk:shared:partial$start-using-sdk.adoc[tag=intro]
+include::analytics-sdk:shared:partial$start-using-sdk.adoc[tag=intro]
 
 
 == Before You Start
@@ -24,12 +24,13 @@ You'll need to add your IP address to the allowlist, during the sign-up and clus
 === Prerequisites
 
 The Columnar Node.js SDK supports LTS versions of Node.js --
-these are 20 and 22 at the time of the 1.0.0 release (October 2024).
+these are 24 and 22 at the time of the 1.0.0 release (August 2025).
 See the xref:project-docs:compatibility.adoc#platform-compatibility[compatibility page] for more information about platform support.
 
+////
 We recommend using the most recent long-term support (LTS) version of Node.js -- 
-at the time of writing (October 2024) this is version 22.
-
+at the time of writing (August 2025) this is version 24.
+////
 
 == Getting the SDK
 
