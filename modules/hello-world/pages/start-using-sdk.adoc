@@ -71,3 +71,9 @@ include::devguide:example$node/src/startusing_esmodules.js[indent=0,tag=esmodule
 The `clusterConnStr` in the above example should takes the form of "https://<your_hostname>:" + PORT.
 include::{version-common}@analytics-sdk:shared:partial$connstr.adoc[tag=connstr]
 
+
+
+
+== Migration from Row-Based Analytics
+
+include::analytics-sdk:shared:migration.adoc[tag=migration]
