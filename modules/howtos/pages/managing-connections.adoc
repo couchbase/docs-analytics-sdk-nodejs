@@ -22,7 +22,7 @@ This page is a wider look at the topic.
 
 == Connecting to a Cluster
 
-A connection to an Anarlytics cluster is represented by an `analytics` object.
+A connection to an Analytics cluster is represented by an `analytics` object.
 // A `Cluster` provides access to databases, scopes, and collections, as well as various Analytics services and management interfaces.
 Connect to Enterprise Analytics by calling `analytics.createInstance` with the connection string, credentials, and any required optional parameters.
 
