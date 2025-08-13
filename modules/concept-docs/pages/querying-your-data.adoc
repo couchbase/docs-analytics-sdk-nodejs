@@ -1,6 +1,6 @@
 = Querying Your Data 
 :page-toclevels: 2
-  :description: Querying Enterprise Analytics from the {name_platform} SDK, with {sqlpp}.
+:description: Querying Enterprise Analytics from the {name_platform} SDK, with {sqlpp}.
 
 
 // Note to editors
