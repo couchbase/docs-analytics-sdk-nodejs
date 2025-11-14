@@ -69,6 +69,44 @@ include::{example-source}[indent=0,tag=sqlpp_named_parameters_query]
 
 
 
+
+== Query Options
+
+The Query Service provides an array of options to customize your query.
+The following table lists them all:
+
+.Available Query Options
+[options="header"]
+|====
+| Name       | Description
+| `abortSignal?: AbortSignal` | Sets an abort signal for the query allowing the operation to be cancelled.
+| `clientContextId?: string` | The returned client context id for this query.
+| `deserializer?: Deserializer` | Sets the deserializer used by `QueryResult.rows` to convert query result rows into objects. If not specified, defaults to the cluster's default deserializer.
+a| 
+[source,javascript]
+----
+namedParameters?: {
+    [key: string]: any;
+}
+----
+| Named values to be used for the placeholders within the query.
+| `positionalParameters?: any[]` | Positional values to be used for the placeholders within the query.
+a| 
+[source,javascript]
+----
+raw?: {
+    [key: string]: any;
+}
+----
+| Specifies any additional parameters which should be passed to the query engine when executing the query.
+| `readOnly?: boolean` | Indicates whether this query should be executed in read-only mode.
+| `scanConsistency?: QueryScanConsistency` | Specifies the consistency requirements when executing the query.
+| `timeout?: number` | The timeout for this operation, represented in milliseconds.
+|====
+
+
+
+
 == Further Information
 
 
