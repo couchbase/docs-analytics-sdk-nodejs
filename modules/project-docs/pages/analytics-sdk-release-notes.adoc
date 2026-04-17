@@ -34,7 +34,7 @@ any changes to expected behavior are noted in the release notes that follow.
 === Version 1.1.0 (?? 2026)
 
 
-This is the first release of the 1.1 Analytics .NET SDK dotminor. 
+This is the first release of the 1.1 Analytics Node.js SDK dotminor. 
 
 https://docs.couchbase.com/sdk-api/analytics-nodejs-client-1.0.0[API Reference^]
 
