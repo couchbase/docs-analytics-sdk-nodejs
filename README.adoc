@@ -4,8 +4,8 @@ This repository hosts the documentation source for the
 https://docs.couchbase.com/analytics-nodejs-sdk/1.0/hello-world/overview.html[Analytics Node.js SDK Documentation].
 
 
-This branch documents the 1.1 release of the SDK.
-It follows the https://docs.couchbase.com/analytics-nodejs-sdk/1.1/project-docs/compatibility.html#api-version[SDK 1.1 API].
+This branch documents the 1.0 release of the SDK.
+It follows the https://docs.couchbase.com/analytics-nodejs-sdk/1.0/project-docs/compatibility.html#api-version[SDK 1.0 API].
 
 
 == Contributing
