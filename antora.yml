@@ -3,7 +3,8 @@ version: '1.0'
 title: Node.js Analytics SDK
 start_page: hello-world:overview.adoc
 nav:
-@@ -8,14 +8,14 @@ nav:
+- modules/ROOT/nav.adoc
+
 asciidoc:
   attributes:
     page-nav-header-levels: 2
