@@ -41,7 +41,7 @@ This way the connection between SDK client and Analytics Server does not stay op
 `cluster.start_query()` → `QueryHandle` → `QueryStatus` → `QueryResultsHandle`
 
 This information flow can be seen in the sample code in the
-xref:howtos:sqlpp-queries-with-sdk.adoc#server-asynchronous-api-with-python-blocking-api[{sqlpp} queries section].
+xref:howtos:sqlpp-queries-with-sdk.adoc#server-asynchronous-api[{sqlpp} queries section].
 
 
 == Next Steps
