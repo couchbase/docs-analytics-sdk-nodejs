@@ -16,6 +16,7 @@
  *  limitations under the License.
  */
 
+// tag::server-async[]
 import {
     Credential,
     createInstance,
