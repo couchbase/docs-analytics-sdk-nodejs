@@ -1,5 +1,5 @@
 = {name-sdk} Quickstart Guide
-:page-toclevels: 2
+:page-toclevels: 3
 :description: Install, connect, try. A quick start guide to get you up and running with Enterprise Analytics and the {name-sdk}.
 
 [abstract]
@@ -47,23 +47,54 @@ For other installation methods, see the xref:project-docs:sdk-full-installation.
 [quickstart]
 == Connecting and Executing a Query
 
+The 1.1 {name-sdk} adds support for JWT and client certificate authentication, as well as a new "async" poll-based API that uses request handles to fetch results, introduced in the 2.2 release of self-managed Enterprise Analytics Server, and eliminating the need for long-running server connections.
+
+The examples in this section are for the standard API -- with blocking and async client-side APIs -- working with all 2.x releases of Enterprise Analytics (with Server Async examples following in the <<#server-asynchronous-api-with-python-blocking-api,Server Async section>>).
+Note, you will still be able to use this API with 2.2+ releases of Enterprise Analytics, in addition to the new API.
+
 To use these examples, create a collection to work upon by 
 xref:enterprise-analytics:intro:connecting-to-data-sources.adoc#import-the-travel-sample-collections[importing the travel-sample dataset] into your cluster.
 
+=== Synchronous API
 
-=== CommonJS
+==== CommonJS
 
 [source,javascript]
 ----
 include::devguide:example$node/src/startusing_commonjs.js[indent=0,tag=commonjs]
 ----
 
-=== ES Modules
+==== ES Modules
 
 [source,javascript]
 ----
 include::devguide:example$node/src/startusing_esmodules.js[indent=0,tag=esmodules]
 ----
+
+
+== Server Asynchronous API
+
+In the 2.2 release, the Enterprise Analytics Server is introduces an asynchronous request API.
+The SDK sends a request, polls for results, and then fetches once the result is available.
+The SDK supports each stage of this information flow:
+
+`cluster.start_query()` → `QueryHandle` → `QueryStatus` → `QueryResultsHandle`
+
+==== CommonJS
+
+.Server Asynchronous API Example
+[source,javascript]
+----
+include::devguide:example$node/src/server_async.js[indent=0,tag=server-async]
+----
+
+==== ES Modules
+
+[source,typescript]
+----
+include::devguide:example$node/src/server_async.ts[indent=0,tag=server-async]
+----
+
 
 
 === Connection String

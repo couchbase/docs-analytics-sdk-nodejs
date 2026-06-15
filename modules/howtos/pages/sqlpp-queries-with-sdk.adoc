@@ -32,6 +32,18 @@ Create a collection to work upon by xref:enterprise-analytics:intro:connecting-t
 
 == Querying Your Dataset
 
+
+[TIP]
+.API Enhancements & Async
+====
+The 1.1 {name-sdk} adds support for JWT and client certificate authentication, as well as a new "async" poll-based API that uses request handles to fetch results, introduced in the 2.2 release of self-managed Enterprise Analytics Server, and eliminating the need for long-running server connections.
+
+The examples in this section are for the standard API -- with blocking and async client-side APIs -- working with all 2.x releases of Enterprise Analytics (with Server Async examples following in the <<#server-asynchronous-api,Server Async section>>).
+Note, you will still be able to use this API with 2.2+ releases of Enterprise Analytics, in addition to the new API.
+====
+
+
+
 Most queries return more than one result, and you want to iterate over the results:
 
 .Scope Level
@@ -67,6 +79,29 @@ Execute an async query with named arguments:
 include::{example-source}[indent=0,tag=sqlpp_named_parameters_query]
 ----
 
+
+== Server Asynchronous API (with Python Blocking API)
+
+In the 2.2 release, the Enterprise Analytics Server adds an asynchronous request API.
+The SDK will send a request, poll for results, and then fetch once the result is available.
+The SDK supports each stage of this information flow:
+
+`cluster.start_query()` → `QueryHandle` → `QueryStatus` → `QueryResultsHandle`
+
+=== CommonJS
+
+.Server Asynchronous API Example
+[source,javascript]
+----
+include::devguide:example$node/src/server_async.js[indent=0,tag=server-async]
+----
+
+=== ES Modules
+
+[source,typescript]
+----
+include::devguide:example$node/src/server_async.ts[indent=0,tag=server-async]
+----
 
 
 
@@ -111,6 +146,6 @@ raw?: {
 
 
 The xref:server:analytics:1_intro.adoc[{sqlpp} for Analytics Reference]
-offers a complete guide to the SQL++ language for both of our analytics services, including all of the latest additions.
+offers a complete guide to the {sqlpp} language for both of our analytics services, including all of the latest additions.
 
 
