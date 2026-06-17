@@ -90,14 +90,14 @@ The SDK reads the certificate and private key from a `PKCS#12` file:
 [source,javascript]
 ----
   const clusterConnStr = 'https://--your-instance--'
-  const credential = new analytics.Credential(
-    '/path/to/client/certificate.pem',
-    '/path/to/client/key.pem'
-  ),
-  security: {
-    trustStorePath: '/path/to/ca/certificates.pem',
-  }
-  const cluster = analytics.createInstance(clusterConnStr, credential)
+  const cert = fs.ReadFileSync('/path/to/client/certificate.pem')
+  const key = fs.ReadFileSync('/path/to/client/key.pem')
+  const credential = new CertificateCredential({
+    cert: cert,
+    key: key
+  })
+
+  const cluster = createInstance(clusterConnStr, credential)
 ----
 
 
