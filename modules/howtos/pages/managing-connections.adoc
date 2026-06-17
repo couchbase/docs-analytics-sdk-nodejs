@@ -73,7 +73,7 @@ async function main() {
     const _EXAMPLE_JWT = 'eyJhbGbiOiJSUzI1NiIsInR5cCI6IkpXVCJ9.payload.signature'
     const endpoint = 'https://--your-instance--'
     const credential = new JwtCredential(_EXAMPLE_JWT)
-    const cluster = Cluster.create_instance(endpoint, cred)
+    const cluster = createInstance(endpoint, credential)
 ----
 
 
