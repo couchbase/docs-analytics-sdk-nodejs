@@ -72,7 +72,7 @@ From the 1.1 SDK (with Enterprise Analytics Server 2.2+) JWT is supported.
 async function main() {
     const _EXAMPLE_JWT = 'eyJhbGbiOiJSUzI1NiIsInR5cCI6IkpXVCJ9.payload.signature'
     const endpoint = 'https://--your-instance--'
-    const cred = Credential.from_jwt(_EXAMPLE_JWT)
+    const credential = new JwtCredential(_EXAMPLE_JWT)
     const cluster = Cluster.create_instance(endpoint, cred)
 ----
 
