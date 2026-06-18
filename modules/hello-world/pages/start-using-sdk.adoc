@@ -76,9 +76,6 @@ include::devguide:example$node/src/startusing_esmodules.js[indent=0,tag=esmodule
 
 In the 2.2 release, the Enterprise Analytics Server is introduces an asynchronous request API.
 The SDK sends a request, polls for results, and then fetches once the result is available.
-The SDK supports each stage of this information flow:
-
-`cluster.start_query()` → `QueryHandle` → `QueryStatus` → `QueryResultsHandle`
 
 ==== CommonJS
 

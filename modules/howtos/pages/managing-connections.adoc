@@ -77,6 +77,15 @@ async function main() {
 ----
 
 
+= Certificate Authority
+
+To make a TLS connection to an Enterprise Analytics cluster with a root certificate issued by a trusted CA (Certificate Authority), you do not need to add this to your configuration --
+the platform's defaults are automatically trusted.
+
+The cluster's root certificate just needs to be issued by a CA whose certificate is in your system trust store.
+This includes well known CAs (including GoDaddy and Verisign), plus any other CA certificates that you wish to add.
+
+
 
 === Certificate Authentication
 
@@ -99,6 +108,12 @@ The SDK reads the certificate and private key from a `PKCS#12` file:
 
   const cluster = createInstance(clusterConnStr, credential)
 ----
+
+
+
+
+
+
 
 
 
@@ -160,5 +175,5 @@ NOTE: Any TLS certificates must be set up at the point where the connections are
 
 
 We strongly recommend that the client and server xref:project-docs:compatibility.adoc#network-requirements[are in the same LAN-like environment] (e.g. AWS Region).
-As this may not always be possible during development, read the guidance on working with xref:ref:client-settings.adoc#commonly-used-options[constrained network environments].
+// As this may not always be possible during development, read the guidance on working with xref:ref:client-settings.adoc#commonly-used-options[constrained network environments].
 // More details on connecting your client code to Couchbase Capella can be found xref:cloud:clouds:connect-an-sdk.adoc#connecting-your-sdk-to-capella[in the Capella Operational docs].

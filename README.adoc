@@ -1,7 +1,7 @@
 = Couchbase Analytics Node.js SDK Documentation
 
 This repository hosts the documentation source for the
-https://docs.couchbase.com/analytics-nodejs-sdk/1.0/hello-world/overview.html[Analytics Node.js SDK Documentation].
+https://docs.couchbase.com/analytics-nodejs-sdk/1.1/hello-world/overview.html[Analytics Node.js SDK Documentation].
 
 
 This branch documents the 1.1 release of the SDK.
