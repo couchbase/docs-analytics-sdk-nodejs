@@ -1,10 +1,10 @@
-= Node.js Analytics SDK
+= Node.js Analytics SDK {sdk_dot_minor}
 :page-layout: landing-page-top-level-sdk
 :page-role: tiles
 :!sectids:
 
 
-= Node.js Analytics SDK
+= Node.js Analytics SDK {sdk_dot_minor}
 
 The Analytics Node.js SDK allows you to connect to an xref:enterprise-analytics:intro:intro.adoc[Enterprise Analytics] cluster from Node.js.
 For connecting to a Couchbase Server Cluster -- self-managed, or Capella Operational --
