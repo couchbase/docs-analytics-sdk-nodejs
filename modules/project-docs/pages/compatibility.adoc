@@ -64,7 +64,7 @@ Where older versions of the {name-sdk} pre-date significant new features in Colu
 
 === API Version
 
-include::{sdk_api}@columnar-sdk:shared:partial$compatibility.adoc[tag=api-version]
+include::{sdk_api}@analytics-sdk:shared:partial$compatibility.adoc[tag=api-version]
 
 
 
