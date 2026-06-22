@@ -22,3 +22,4 @@ asciidoc:
     sdk_api: '1.1'
     sdk-api-link: https://docs.couchbase.com/sdk-api/analytics-nodejs-client
     sdk-gh-link: https://github.com/couchbaselabs/analytics-nodejs-client/tree/main
+    async-server-api-feature-name: 'Server Asynchronous Request API'
