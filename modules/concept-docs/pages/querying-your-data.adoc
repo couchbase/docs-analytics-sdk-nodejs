@@ -23,7 +23,7 @@
 
 Traditionally, analyzing JSON data in NoSQL databases requires complex transformations (like flattening) to prepare it for analytics, causing delays and hindering real-time insights.
 Enterprise Analytics eliminates these ETL complexities by unifying operational and analytical data stores into a single platform.
-This enables Zero ETL, reducing costs, complexity, and improving time to insight.
+This enables Zero ETL, reducing costs and complexity, and improving time to insight.
 
 
 
